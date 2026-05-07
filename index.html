@@ -2,23 +2,64 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja Minimal</title>
+    <title>Le Pepperoni | Pizzaria</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <h1>Le Pepperoni | Pizzaria</h1>
+    <form action="" id="id_formulario">
 
-<header>
-    <h1>Loja Minimal</h1>
-    <div class="cart">
-        🛒 <span id="cart-count">0</span>
-    </div>
-</header>
+        <label for="nome_completo" id="id_campo_nome_completo">Nome Completo:</label><br>
+        <input type="text" id="nome_completo" name="nome_completo" required autofocus minlength="8" placeholder="Insira o seu nome">
 
-<main>
-    <div class="products" id="products"></div>
-</main>
+        <div class="caixa_ingredientes">
+            <fieldset>
+                <legend>Selecione os ingredientes da sua pizza</legend>
+                <input type="checkbox" name="queijo" id="id_queijo">
+                <label for="id_queijo">Queijo</label>
+                 <input type="checkbox" name="calabresa" id="id_calabresa">
+                <label for="id_calabresa">Calabresa</label>
+                 <input type="checkbox" name="tomate" id="id_tomate">
+                <label for="id_tomate">Tomate</label>
+                 <input type="checkbox" name="cebola" id="id_cebola">
+                <label for="id_cebola">Cebola</label>
+            </fieldset>
+        </div>
+        
+        <div class="caixa_tamanhopizza">
+            <fieldset>
+                <legend >Escolha o tamanho da pizza</legend>
+            
+                <input type="radio" name="radio_tamanho" id="id_pequena" value="p" required>
+                <label for="id_pequena">Pequena (4 fatias)</label>
+                <input type="radio" name="radio_tamanho" id="id_media" value="m">
+                <label for="id_media">Média (6 fatias)</label>
+                <input type="radio" name="radio_tamanho" id="id_grande" value="g">
+                <label for="id_grande">Grande (8 fatias)</label>
+                <input type="radio" name="radio_tamanho" id="id_familia" value="f">
+                <label for="id_familia">Família (12 fatias)</label>
+            </fieldset>
+        </div>
 
+        <p>Escolha um tipo de massa:</p>
+        <div class="caixa_tipomassa">
+            <select name="tipo_de_massa" id="id_tipo_de_massa" required>
+                <option value="">Selecione um tipo de massa</option>
+                <option value="ceara">Massa Ceará</option>
+                <option value="gourmet">Massa Gourmet</option>
+                <option value="integral">Massa Integral</option>
+            </select>
+        </div>
+
+        <label for="endereco">Endereço</label>
+        <input type="text" name="endereco" required placeholder="Insira seu endereço">
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    
+    </form>
+    <div id="id_resultado"></div>
 <script src="script.js"></script>
 </body>
 </html>
