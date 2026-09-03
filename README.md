@@ -34,14 +34,6 @@ Sou um estudante apaixonado por tecnologia e resolução de problemas através d
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
----
-<!-- Cards com total de commits e dados do GitHub -->
-<p align="left">
-  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=matheushamilton&show_icons=true&theme=dark&include_all_commits=true&count_private=true" />
-  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=matheushamilton&layout=compact&theme=dark" />
-</p>
-
----
 
 ## 📬 Conexões
 
